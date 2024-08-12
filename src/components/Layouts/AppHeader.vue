@@ -39,98 +39,50 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-2">
             <li class="nav-item">
-              <RouterLink to="/" class="nav-link " aria-current="page">Home</RouterLink>
+              <RouterLink to="/" class="nav-link" aria-current="page">Home</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink class="nav-link" to="/about">About</RouterLink>
+              <RouterLink class="nav-link" to="/about">About</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink class="nav-link" to="/service">Service</RouterLink>
-              </li>
-              <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown"
-                  aria-expanded="false">Tax information
-                </RouterLink>
-                <ul class="dropdown-menu">
-                  <li>
-                    <RouterLink class="dropdown-item" to="/Sub" >Subservice</RouterLink>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
-              </li>
+              <RouterLink class="nav-link" to="/service">Service</RouterLink>
+            </li>
+            <li class="nav-item dropdown">
+              <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown"
+                aria-expanded="false">Tax information
+              </RouterLink>
+              <ul class="dropdown-menu">
+                <li>
+                  <RouterLink class="dropdown-item" to="/Sub">Subservice</RouterLink>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+            </li>
           </ul>
         </div>
       </div>
-    </nav> 
-    <!-- Off-Canvas Menu -->
-    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"  :class="!visible ? 'offcanvas-end ' : ''">
-      <div class="offcanvas-header">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <hr />
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-              <RouterLink to="/" class="nav-link " @click="visible = !visible" aria-current="page">Home</RouterLink>
-            </li>
-            <li class="nav-item">
-                <RouterLink class="nav-link" to="/about" @click="visible = !visible">About</RouterLink>
-            </li>
-            <li class="nav-item">
-                <RouterLink class="nav-link" to="/service" @click="visible = !visible">Service</RouterLink>
-              </li>
-              <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown"
-                  aria-expanded="false">Tax information
-                </RouterLink>
-                <ul class="dropdown-menu">
-                  <li>
-                    <RouterLink class="dropdown-item" to="/Sub" @click="visible = !visible">Subservice</RouterLink>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/contact" @click="visible = !visible">Contact</RouterLink>
-              </li>
-        </ul>
-      </div>
-    </div> 
-
-
-
-  </div>
+    </nav>
 
 </template>
 
 <script>
-
 import { RouterLink } from "vue-router";
 export default {
   data() {
     return {
       name: "AppHeader",
-      visible: false,
     };
   },
-  
 };
-
 </script>
 
 
@@ -143,14 +95,12 @@ export default {
   width: 85%;
 
 }
-
-.right {
+.right{
   width: 15%;
 }
-
 .news-ticker-header {
   color: rgb(73, 202, 71);
-
+  
   display: flex;
 }
 
@@ -164,7 +114,7 @@ export default {
 .news-ticker-content {
   overflow: hidden;
   /* white-space: nowrap; */
-
+ 
 }
 
 .news-ticker-content ul {
@@ -193,7 +143,7 @@ export default {
 
 /*** Ticker Animation***/
 @keyframes ticker {
-
+  
   0% {
     transform: translateX(100%);
   }
@@ -208,8 +158,7 @@ export default {
   .no-mobile {
     display: none;
   }
-
-  .social-icons {
+  .social-icons{
     display: none !important;
   }
 
@@ -218,19 +167,43 @@ export default {
 .closeMenuBtn {
   display: none !important;
 }
-
 @media (max-width:1130px) {
-  .news-ticker {
+  .news-ticker{
     width: 75%;
   }
-
-  .right {
+  .right{
     width: 25%;
   }
 }
 
 /*****Call back function image */
 @media (max-width: 992px) {
+  .nav-list {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    /*left: -100% !important;*/
+    /*transform: translateX(50%) !important;*/
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    width: 90vw;
+  }
+
+  .nav-c {
+    justify-content: space-between !important;
+  }
+
+  .menu-btn {
+    display: block !important;
+  }
+
+  .closeMenuBtn {
+    display: block !important;
+  }
+
   .home-sec4 {
     background-position: bottom;
   }
