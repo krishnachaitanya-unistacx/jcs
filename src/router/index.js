@@ -66,6 +66,7 @@ const routes = [
     },
     {
         path: "/sub/:id",
+        name:"info",
         component: ()=> import("../components/Layouts/info.vue"),
        
     },

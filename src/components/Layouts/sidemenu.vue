@@ -1,23 +1,41 @@
 <template>
-    <!-- col2 -->
-    <div class="col-sm-3  ps-1">
+    <!-- col1 -->
+    <div class=" side-bar col-sm-3 pt-5">
         <div class="position-sticky top-0">
             <h3>About Tax</h3>
             <hr />
             <ul>
-                <li>
+                <li v-for="user in users" :key="user.id">
+                     <RouterLink :to="{ name: 'UserProfile', params: { id: user.id } }">
+                            {{ user.name }}
+                    </RouterLink>
+                 </li>
+                
+                <li >
                     <RouterLink to="/sub/1">What is Tax?</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/sub/3">Direct Tax in India</RouterLink>
+                    <RouterLink to="/sub/2">Direct Tax in India</RouterLink>
                   
                 </li>
-                <li>Difference between Direct and Indirect Taxes</li>
-                <li> Goods and Service Tax(GST)</li>
-                <li> Capital Gains Tax(CGT)</li>
-                <li>Capital Gain Tax on Shares</li>
-                <li>Advance Tax</li>
-                <li> Income Tax for FY 2017-18 |Check Slab Rates,Calculation & News</li>
+                <li>
+                    <RouterLink to="/sub/3">Difference between Direct and Indirect Taxes </RouterLink>
+                </li>
+                <li> 
+                    <RouterLink to="/sub/4">Goods and Service Tax(GST)</RouterLink>
+                </li>
+                <li> 
+                    <RouterLink to="/sub/5">Capital Gains Tax(CGT)</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/sub/4">Capital Gain Tax on Shares</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/sub/4">Advance Tax</RouterLink>
+                </li>
+                <li> 
+                    <RouterLink to="/sub/4">Income Tax for FY 2017-18 |Check Slab Rates,Calculation & News</RouterLink>
+                </li>
             </ul>
             <!-- form -->
 <!-- 
@@ -49,6 +67,7 @@ export default {
     data() {
         return {
             name: "sidemenu",
+         
 
         }
     }
@@ -56,76 +75,38 @@ export default {
 
 </script>
 <style scoped>
-/* col2 */
-.servpage-sec1-col2 {
-    width: 400px;
-    /* background-color: #8bdbaf; */
-    padding: 25px 25px;
+
+/* col1 */
+h3 {
+    color: rgb(0, 84, 139);
+    font-weight: 700;
+
+}
+.side-bar ul {
+    padding-left: 0; 
+    list-style-type: none;
+
+}
+.side-bar ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+
 }
 
-.service-sec2 h3 {
-    font-size: 25px;
-    margin: 30px 0;
+.side-bar ul li a {
+  text-decoration: none;
+  color: black; /* Sets the text color to black */
+
+}
+
+.side-bar ul li a:hover {
     color: #3a526a;
+    text-decoration: underline  #18ba60 1px;
 }
 
-.service-sec2 hr {
-    border-bottom: 2px solid gray;
-    margin-bottom: 40px;
-}
-
-.service-sec2 ul {
-    padding-left: 5px;
-    list-style: none;
-}
-
-.service-sec2 ul li {
+.side-bar ul li {
     margin-bottom: 25px;
 }
 
-.service-sec2 ul li:hover {
-    cursor: pointer;
-    font-weight: 700;
-    color: #3a526a;
-    text-decoration: underline #18ba60 1px;
-}
 
-
-/*********form************/
-.f {
-    width: 100%;
-    height: auto;
-    background-color: #F1F6F2;
-    border-radius: 25px;
-}
-
-.send-form {
-    margin: 30px 15px;
-    padding: 20px 0px;
-
-}
-
-.send-form input {
-    width: 100%;
-    height: auto;
-    font-size: 17px;
-    margin-bottom: 30px;
-    background-color: white;
-    border: transparent;
-    padding: 8px;
-}
-
-.send-form .msg {
-    padding-bottom: 75px;
-}
-
-.send-form button {
-    width: 100%;
-    height: 40px;
-    font-size: 17px;
-    font-weight: 600;
-    color: white;
-    background-color: #18ba60;
-    border: transparent;
-}
 </style>

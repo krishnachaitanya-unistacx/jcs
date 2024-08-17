@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="row d-flex align-items-center">
                     <div class=" col-lg-6 info-box gap-5">
-                        <img src="../../assets/images/about.jpg" style="width:100%;height: auto;">
+                        <img src="../../assets/images/a.jpg" style="width:100%;height: auto;">
                     </div>
                     <div class="col-lg-6">
                         <div class=" px-3 ">

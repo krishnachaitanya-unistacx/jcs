@@ -24,7 +24,7 @@
                         <h3>About Tax</h3>
                         <hr />
                         <ul>
-                            <li> <RouterLink to="/sub/:id" >What is Tax?</RouterLink></li>
+                            <li> <RouterLink to="/sub/1" >What is Tax?</RouterLink></li>
                             <li>Direct Tax in India</li>
                             <li>Difference between Direct and Indirect Taxes</li>
                             <li> Goods and Service Tax(GST)</li>

@@ -21,7 +21,7 @@
                 <!-- col1   sidebar -->
                 <sidemenu />
                 <!-- col-2  information  -->
-                <div class="col-sm-9  my-4">
+                <div class="col-sm-9 pt-4 my-4">
                     <!--row 1-->
                     <div class="row R1">
                         <p class="mini-h mb-0 ">Service</p>
