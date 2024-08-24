@@ -1,48 +1,7 @@
 import { createApp } from 'vue'
-//import App from './App.vue/'
-// import { useRoute } from 'vue-router'
-// import {Router} from "vue-router"
 import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
-// import AppHeader from '../components/Layouts/AppHeader.vue'
 import AppHome from '../components/Layouts/AppHome.vue'
-// import AppAbout from '../components/Layouts/AppAbout.vue'
-// import AppServices from '../components/Layouts/AppServices.vue'
-// import AppSubservice from '../components/Layouts/AppSubservice.vue'
-// import AppContact from '../components/Layouts/AppContact.vue'
 
-// Vue.use(Router)
-
-// const router = new Router({
-//     routes:[
-//         {
-//             path: "/home",
-//             name: "AppHome",
-//             component:AppHome
-//         },
-//         {
-//             path: "/about",
-//             name: "AppAbout",
-//             component:AppAbout
-//         },
-//         {
-//             path: "/services",
-//             name: "AppServices",
-//             component:AppServices
-//         },
-//         {
-//             path: "/sub",
-//             name: "AppSubservice",
-//             component:AppSubservice
-//         },
-//         {
-//             path: "/contact",
-//             name: "AppContact",
-//             component:AppContact
-//         },
-
-
-//     ]
-// })
 
 const routes = [
     {

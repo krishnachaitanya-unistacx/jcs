@@ -1,20 +1,26 @@
-const cgt = {
+const page5 = {
 
     "title": "Capital Gains Tax - CGT",
     "description": "Capital gains is the profit that the investor realizes when he sells the capital asset for a price higher than its purchase price. The transfer of capital asset must be made in the previous year. This is taxable under the head ‘Capital Gains’ and there must exist a capital asset, transfer of the capital asset and profit or gains arising from the transfer.",
-    "description-1": "Capital Gains include any property held by the assesse except the following:",
-    "sublist": [
-        "Stock in trade.",
-        "Consumable stores or raw materials held for the purpose of business or profession.",
-        "Personal effects that are movable except jewellery, archaeological collections, drawings, paintings, sculptures or any art work held for personal use.",
-        "Agricultural land. The land must not be located within 8kms from a municipality, Municipal Corporation, notified area committee, town committee or a cantonment board with a minimum population of 10,000.",
-        "6.5 percent Gold Bonds, National Defence Gold Bonds and Special Bearer Bonds.",
-        "Gold Deposit bonds under Gold Deposit Scheme."
-    ],
+    
     "sub-topics": [
+        {
+            "small-para": "Capital Gains include any property held by the assesse except the following:",
+            "sublist": [
+                "Stock in trade.",
+                "Consumable stores or raw materials held for the purpose of business or profession.",
+                "Personal effects that are movable except jewellery, archaeological collections, drawings, paintings, sculptures or any art work held for personal use.",
+                "Agricultural land. The land must not be located within 8kms from a municipality, Municipal Corporation, notified area committee, town committee or a cantonment board with a minimum population of 10,000.",
+                "6.5 percent Gold Bonds, National Defence Gold Bonds and Special Bearer Bonds.",
+                "Gold Deposit bonds under Gold DeposTheit Scheme."
+            ],
+          
+        
+        },
         {
             "title": "What is Capital Gains Tax?",
             "description": "Capital gains tax is a tax that is charged on the profits that he has made by selling his capital asset. For making it easy for taxation, the capital assets are classified to ‘Short-Term Capital Asset; and ‘Long-Term Capital Asset’.",
+            
             "sub-topics": [
 
                 {
@@ -42,7 +48,21 @@ const cgt = {
         }
         , {
             "title": "Computation of Capital Gains:",
-            "description": "Mr. Sharma is a resident individual and he sells a residential house on 12/4/2013 for Rs.25,00,000. He had purchased the house on 5/7/2011 for Rs.5,00,000 and spent Rs.1,00,000 on its improvement during May 2012. During the previous year, 2013-2014, his income under all heads excluding capital gains was NIL."
+            "small-para":"The computations for the capital gains are as follows:",
+            "title-1":"For Example:",
+
+            "sublist":[
+                "The computations for the capital gains are as follows:",
+                "Short-term capital gain = Full value consideration- (cost of acquisition + cost of improvement + cost of transfer)",
+                "Long-term capital gain = Full value of consideration received or accruing – (indexed cost of acquisition + indexed cost of improvement + cost of transfer). Where",
+                "Indexed cost of acquisition = Cost of acquisition X cost inflation index of the year of transfer/ cost inflation index of the year of acquisition",
+                "Indexed cost of improvement = cost of improvement X cost inflation index of the year of transfer / cost inflation index of the year of improvement",
+                "Cost of transfer is a brokerage paid for arranging the deal, legal expenses incurred, cost of advertising, etc."
+                
+
+            ],
+     
+            "description-1": "Mr. Sharma is a resident individual and he sells a residential house on 12/4/2013 for Rs.25,00,000. He had purchased the house on 5/7/2011 for Rs.5,00,000 and spent Rs.1,00,000 on its improvement during May 2012. During the previous year, 2013-2014, his income under all heads excluding capital gains was NIL."
         }
         , {
             "title": "Capital Gain Index:",
@@ -123,4 +143,4 @@ const cgt = {
         }
     ]
 }
-export default cgt;
+export default page5;

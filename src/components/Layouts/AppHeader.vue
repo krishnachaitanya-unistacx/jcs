@@ -17,7 +17,7 @@
             </ul>
           </div>
         </div>
-        <div class="right d-flex p-1 align-items-center justify-content-around">
+        <div class="right d-flex p-1 align-items-center justify-content-around " >
           <a class="btn  btn-sm btn-success" href="tel:+918374318214">call now</a>
           <div class="news-ticker-header decoration-none d-flex gap-3 flex-inline social-icons">
             <a href="#"><i class="bi bi-facebook fs-5"></i></a>
@@ -48,7 +48,7 @@
                 <RouterLink class="nav-link" to="/service">Service</RouterLink>
               </li>
               <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown"
+                <RouterLink class="nav-link dropdown-toggle" role="button" to="/info" data-bs-toggle="dropdown"
                   aria-expanded="false">Tax information
                 </RouterLink>
                 <ul class="dropdown-menu">
@@ -131,6 +131,7 @@ export default {
 
 
 <style scoped>
+
 .ticker-container {
   font-family: 'Poppins', sans-serif;
 }

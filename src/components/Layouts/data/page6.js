@@ -1,4 +1,4 @@
-const cgts={
+const page6={
     "sub-title":"Capital Gain Tax on Shares",
     "title":"How to Calculate Capital Gains Tax on Shares",
     "description":"Capital gains are the rising worth of an investment that makes its current value higher than when it was originally bought by the owner. So if you bought shares of a company at Rs. 25 lakh in 2008 and the current value of the shares is Rs. 35 lakh, then the capital gains would be equal to Rs. 10 lakh in 8 years. However, if you do not sell the shares, then the capital gains are not realised and you make no profit. On the other hand, if the worth of the investment has depreciated over a period of time, you incur capital loss if you sell it.",
@@ -20,7 +20,21 @@ const cgts={
             "sublist":[
                 "1.Brokerage or expenditure incurred in connection with the sale of the asset",
                 "2.Purchase price of the asset"
-            ]
+            ],
+            "table": {
+                "headers": ["Financial year", "CII"],
+                "rows": [
+                      ["2010-11", "711"],
+                      ["2011-12", "785"],
+                      ["2012-13", "852"],
+                      ["2013-14", "939"],
+                      ["2014-15", "1024"],
+                      ["2015-16", "1081"],
+                      ["2016-17", "1125"],
+                ]
+            }
+            
+            
         },
         {
             "description":"Sandeep Venkatesh bought 250 shares of a listed company in October 2015 at a cost of Rs. 155 per share, paying a total of Rs. 38,750. He sold them for Rs. 192 per share in March 2016, after 5 months, at Rs. 48,000. Let us see how much his short-term capital gains will be.",
@@ -79,4 +93,4 @@ const cgts={
         }
     ]
 }
-export default cgts;
+export default page6;

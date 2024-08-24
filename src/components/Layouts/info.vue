@@ -1,62 +1,137 @@
 <template>
-    <!-- Service -->
-    <div class=" service-sec1 d-flex align-items-center">
-        <div class="container">
-            <div class="row p-2">
-                <div>
-                    <RouterLink class="routlink" to="/">Home page</RouterLink> <i class="bi bi-chevron-right"></i>
-                    <RouterLink class="routlink" to="/contact">Contact us</RouterLink>
-                </div>
-                <!-- <h1 class="my-3 ">{{current_data.title}}</h1> -->
-                <p>with over 10 years of experience helping
-                    busineto fi d<br>comprehensive solution
-                </p>
+<!-- Service -->
+<div class=" service-sec1 d-flex align-items-center">
+    <div class="container">
+        <div class="row p-2">
+            <div>
+                <RouterLink class="routlink" to="/">Home page</RouterLink> <i class="bi bi-chevron-right"></i>
+                <RouterLink class="routlink" to="/contact">Contact us</RouterLink>
             </div>
+            <!-- <h1 class="my-3 ">{{current_data.title}}</h1> -->
+            <p>with over 10 years of experience helping
+                busineto fi d<br>comprehensive solution
+            </p>
         </div>
     </div>
-    <!-- Service-section-2 -->
-    <div class=" service-sec2 d-flex align-items-center my-5">
-        <div class="container">
-            <div class="row ">
-                <!-- col1   sidebar -->
-                <sidemenu />
-                <!-- col-2  information  -->
-                <div class="col-sm-9 pt-4 my-4">
-                    <!--row 1-->
-                    <div class="row R1">
-                        <p class="mini-h mb-0 ">Service</p>
-                        <h2 class="pb-2"> {{ data[id].title }}</h2>
-                        <p>{{ data[id].description }}</p>
-                        <div class="sub-heads py-2" v-for="(topic, index) in data[id]['sub-topics']" :key="index">
+</div>
+<!-- Service-section-2 -->
+<div class=" service-sec2 d-flex align-items-center my-5">
+    <div class="container">
+        <div class="row ">
+            <!-- col1   sidebar -->
+            <sidemenu />
+            <!-- col-2  information  -->
+            <div class="col-sm-9 pt-4 my-4">
+                <!--row 1-->
+                <div class="row R1">
+                    <p class="mini-h mb-0 ">Service</p>
 
-                            <h5>{{ topic.title }}</h5>
-                            <p>{{ topic.description }}</p>
+                    <!--1st data -->
+                    <h2 class="pb-2"> {{ data[id].title }}</h2>
+                    <p>{{ data[id].description }}</p>
 
-                            <ul class="bg-success" v-if="topic.sublist">
-                                <li v-for="(item, i) in topic.sublist" :key="i">{{ item }}</li>
+                    <!--2nd topic-->
+                    <div class="sub-heads" v-for="(topic, index) in data[id]['sub-topics']" :key="index">
+                        <h5><b>{{ topic.title }}</b></h5>
+                        <p>{{ topic.description }}</p>
+
+                        <h6 v-if="topic['title-1']"><b>{{ topic['title-1'] }}</b></h6>
+                        <p v-if="topic['small-para']">{{ topic['small-para'] }}</p>
+                        <ul v-if="topic.sublist">
+                            <li v-for="(item, i) in topic.sublist" :key="i">{{ item }}</li>
+                        </ul>
+                        <p v-if="topic['description-1']">{{ topic['description-1'] }}</p>
+                        <p v-if="topic['description-2']">{{ topic['description-2'] }}</p>
+                        <p v-if="topic['description-3']">{{ topic['description-3'] }}</p>
+                        <p v-if="topic['description-4']">{{ topic['description-4'] }}</p>
+                        <p v-if="topic['description-5']">{{ topic['description-5'] }}</p>
+                        <!-- Special case for the "box-heading" and "box-sublist" -->
+                        <div v-if="topic['box-heading']" class="blue-box">
+                            <h4>{{ topic['box-heading'] }}</h4>
+                            <p>{{ topic['box-description'] }}</p>
+                                <!------list---->
+                            <ul>
+                            <li v-for="(item, idx) in topic['box-sublist']" :key="idx">{{ item }}</li>
                             </ul>
-                            <p v-if="topic['description-1']">{{ topic['description-1'] }}</p>
-                            <p v-if="topic['description-2']">{{ topic['description-2'] }}</p>
-                            <p v-if="topic['description-3']">{{ topic['description-3'] }}</p>
-                            <p v-if="topic['description-4']">{{ topic['description-4'] }}</p>
+                        </div>
+                        <!-- Render table if it exists in Topic -->
+                        <table v-if="topic.table" class="table">
+                            <thead>
+                                <tr>
+                                    <th v-for="(header, headerIndex) in topic.table.headers" :key="headerIndex">{{ header }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(row, rowIndex) in topic.table.rows" :key="rowIndex">
+                                    <td v-for="(cell, cellIndex) in row" :key="cellIndex">{{ cell }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                            <div v-if="topic['sub-topics']" v-for="(subTopic, subIndex) in topic['sub-topics']" :key="subIndex">
-                                <h5>{{ subTopic.title }}</h5>
-                                <p>{{ subTopic.description }}</p>
-                                <p v-if="subTopic['small-para']">{{ subTopic['small-para'] }}</p>
+                        <!--3rd subTopic-->
+                        <div v-if="topic['sub-topics']" v-for="(subTopic, subIndex) in topic['sub-topics']" :key="subIndex">
+                            <h5>{{ subTopic.title }}</h5>
+                            <h6 v-if="subTopic['title-1']"><b>{{ subTopic['title-1'] }}</b></h6>
+                            <p>{{ subTopic.description }}</p>
+                            <p v-if="subTopic['small-para']">{{ subTopic['small-para'] }}</p>
+                            <!------list---->
+                            <ul v-if="subTopic.sublist">
+                                <li v-for="(listItem, listIndex) in subTopic.sublist" :key="listIndex">
+                                    {{listItem }}</li>
+                            </ul>
+                        <!-- Render table if it exists in subTopic -->
+                            <table v-if="subTopic.table" class="table">
+                                <thead>
+                                    <tr>
+                                    <th v-for="(header, headerIndex) in subTopic.table.headers" :key="headerIndex">{{ header }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr v-for="(row, rowIndex) in subTopic.table.rows" :key="rowIndex">
+                                    <td v-for="(cell, cellIndex) in row" :key="cellIndex">{{ cell }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            <p v-if="subTopic['description-1']">{{ subTopic['description-1'] }}</p>
+                            <p v-if="subTopic['description-2']">{{ subTopic['description-2'] }}</p>
+                            <p v-if="subTopic['description-3']">{{ subTopic['description-3'] }}</p>
+                            <p v-if="subTopic['description-4']">{{ subTopic['description-4'] }}</p>
+                            <p v-if="subTopic['description-5']">{{ subTopic['description-5'] }}</p>
+                            <!-- Special case for the "box-heading" and "box-sublist" -->
+                            <div v-if="subTopic['box-heading']" class="blue-box">
+                                <h6><b>{{ subTopic['box-heading'] }}</b></h6>
+                                <p>{{ subTopic['box-description'] }}</p>
+                                <ul>
+                                <li v-for="(item, idx) in subTopic['box-sublist']" :key="idx">{{ item }}</li>
+                                </ul>
+                            </div>
 
-                                <div v-if="subTopic['sub-topics']"
-                                    v-for="(nestedTopic, nestedIndex) in subTopic['sub-topics']" :key="nestedIndex">
-                                    <h5>{{ nestedTopic.title }}</h5>
-                                    <p>{{ nestedTopic.description }}</p>
+                            <!--4th nestedTopics-->
 
-                                    <ul v-if="nestedTopic.sublist">
-                                        <li v-for="(listItem, listIndex) in nestedTopic.sublist" :key="listIndex">
-                                            {{listItem }}</li>
-                                    </ul>
-
-                                    <p v-if="nestedTopic['description-1']">{{ nestedTopic['description-1'] }}</p>
-                                </div>
+                            <div v-if="subTopic['nestedTopic']" v-for="(nestedTopic, nestedIndex) in subTopic['sub-topics']" :key="nestedIndex">
+                                <h5>{{ nestedTopic.title }}</h5>
+                                <p>{{ nestedTopic.description }}</p>
+                                <h5 v-if="nestedTopic['title-1']">{{nestedTopic['title-1']}}</h5>
+                                <!------list---->
+                                <ul v-if="nestedTopic.sublist">
+                                    <li v-for="(listItem, listIndex) in nestedTopic.sublist" :key="listIndex">
+                                        {{listItem }}</li>
+                                </ul>
+                                <p v-if="nestedTopic['description-1']">{{ nestedTopic['description-1'] }}</p>
+                                 <!-- Render table if it exists in nestedTopics -->
+                                <table v-if="nestedTopic.table" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th v-for="(header, headerIndex) in nestedTopic.table.headers" :key="headerIndex">{{ header }}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr v-for="(row, rowIndex) in nestedTopic.table.rows" :key="rowIndex">
+                                            <td v-for="(cell, cellIndex) in row" :key="cellIndex">{{ cell }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -64,37 +139,49 @@
             </div>
         </div>
     </div>
-
+</div>
 </template>
+
 <script>
 import sidemenu from './sidemenu.vue';
-import data from './data/tax';
-import { useRoute } from 'vue-router';
+import {
+    useRoute
+} from 'vue-router';
 import main_data from './data/main_data';
 
 export default {
     name: "info.vue",
-    components: {
-        sidemenu,
-    },
+
     data() {
         return {
             data: main_data,
             id: 0,
-            current_data: null
         }
     },
     mounted() {
         const route = useRoute();
-        console.log("mounted")
-        console.log(route.params.id)
         this.id = route.params.id;
+    },
+    components: {
+        sidemenu
     }
 
 }
 </script>
 
 <style scoped>
+.blue-box {
+  background-color: #f4f5f7;
+  border: 1px solid #dad6d6;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+table,tr,td,th{
+   
+  background-color: #f4f5f7;
+  border: 1px solid #dad6d6;
+}
 p {
     font-size: 15px;
 
@@ -179,7 +266,6 @@ h4 {
     text-decoration: underline #18ba60 1px;
 } */
 
-
 /*********form************/
 .f {
     width: 100%;
@@ -219,7 +305,7 @@ h4 {
 }
 
 /****Row R2 ****/
-.R1 ul{
+.R1 ul {
     text-decoration: none;
 }
 

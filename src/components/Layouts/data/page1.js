@@ -42,37 +42,107 @@ const indirect_tax = {
             ]
         },
         {
-            "title": "Examples of Direct Taxes:",
-            "description": "These are some of the direct taxes that you pay",
+            "title-1": "Examples of Direct Taxes:",
+            "description-1": "These are some of the direct taxes that you pay",
             "sub-topics": [
                 {
+
                     "title": "1. Income Tax:",
                     "description": "This is one of the most well-known and least understood taxes. It is the tax that is levied on your earning in a financial year. There are many facets to income tax, such as the tax slabs, taxable income, tax deducted at source (TDS), reduction of taxable income, etc. The tax is applicable to both individuals and companies. For individuals, the tax that they have to pay depends on which tax bracket they fall in. This bracket or slab determines the tax to be paid based on the annual income of the assessee and ranges from no tax to 30% tax for the high income groups.",
                     "description-1": "The government has fixed different taxes slabs for varied groups of individuals, namely general taxpayers, senior citizens (people aged between 60 to 80, and very senior citizens (people aged above 80).",
-                    "sub-topics": [
-                        {
-                            "title": "New Income Tax Slab Rates for FY 2017-18 (AY 2018-19)",
-                            "sub-title": "Income tax slab for individual tax payers & HUF (less than 60 years old) (both men & women)"
-    
-                        },
-                        {
-                            "sub-title": "Income tax slab for individual tax payers & HUF (60 years old or more but less than 80 years old) (both men & women)"
-                        },
-                        {
-                            "sub-title": "Income tax slab for super senior citizens (80 years old or more) (both men & women)",
-                            "description": "Below, you will find a few tables that list out Income Tax Slab Rates for FY 2016-17 (AY 2017-18) These income tax slab rates are also applicable for :FY 2015-16 (AY 2016-17) FY 2014-15 (AY 2015-16) ."
-                        },
-                        {
-                            "title": "Income Tax Slab for General Taxpayers :"
-                        },
-                        {
-                            "title": "Income Tax Slab for Senior Citizens (Ages between 60 to 80 years) :"
-                        },
-                        {
-                            "title": "Income Tax Slab for Super Senior Citizens (Ages Above 80 years) :"
-                        }
-                    ]
                 },
+                {
+                    "title": "New Income Tax Slab Rates for FY 2017-18 (AY 2018-19)",
+                    "title-1": "Income tax slab for individual tax payers & HUF (less than 60 years old) (both men & women)",
+                    "table": {
+                        "headers": ["Income Slabs", "Tax Rates"],
+                        "rows": [
+                           [" income up to Rs.2,50,000.","No Tax"],
+                           [" income from Rs.2,50,000 - Rs.5,00,000.", "5% "],
+                           [" income from Rs.5,00,000 - Rs.10,00,000.", " 20%"],
+                           [" income more than Rs.10,00,000.", "30%"],
+                           [" Surcharge: 10% of income tax, where total income is between Rs. 50 lakhs and Rs.1 crore. 15% of income tax, where total income exceeds Rs. 1 crore."],
+                           [" Cess: 3% on total of income tax + surcharge."],
+                           [" * Income upto Rs. 2,50,000 is exempt from tax if you are less than 60 years old."],
+                       ]
+                          
+                   }
+
+                },
+                {
+                    "title-1": "Income tax slab for individual tax payers & HUF (60 years old or more but less than 80 years old) (both men & women)",
+                    "table": {
+                        "headers": ["Income Slabs", "Tax Rates"],
+                        "rows": [
+                           [" income up to Rs.3,00,000.", "No Tax"],
+                           [" income from Rs.3,00,000 - Rs.5,00,000.", "5% "],
+                           [" income from Rs.5,00,000 - Rs.10,00,000.", " 20%"],
+                           [" income more than Rs.10,00,000.", "30%"],
+                           [" Surcharge: 10% of income tax, where total income is between Rs. 50 lakhs and Rs.1 crore. 15% of income tax, where total income exceeds Rs. 1 crore."],
+                           [" Cess: 3% on total of income tax + surcharge."],
+                           [" * Income upto Rs. 3,00,000 is exempt from tax if you are less than 60 years old."],
+                       ]
+                          
+                   }
+                },
+                {
+                    "title-1": "Income tax slab for super senior citizens (80 years old or more) (both men & women)",
+                    "description": "Below, you will find a few tables that list out Income Tax Slab Rates for FY 2016-17 (AY 2017-18) These income tax slab rates are also applicable for :FY 2015-16 (AY 2016-17) FY 2014-15 (AY 2015-16) .",
+                    "table": {
+                        "headers": ["Income Slabs", "Tax Rates"],
+                        "rows": [
+                           [" income up to Rs.2,50,000.", "No Tax"],
+                           [" income up to Rs.5,00,000.", "No Tax"],
+                           [" income from Rs.5,00,000 - Rs.10,00,000.", " 20%"],
+                           [" income more than Rs.10,00,000.", "30%"],
+                           [" Surcharge: 10% of income tax, where total income is between Rs. 50 lakhs and Rs.1 crore. 15% of income tax, where total income exceeds Rs. 1 crore."],
+                           [" Cess: 3% on total of income tax + surcharge."],
+                           [" * Income upto Rs. 5,00,000 is exempt from tax if you are less than 80 years old."],
+                       ]
+                          
+                   }
+                },
+                {
+                    "title": "Income Tax Slab for General Taxpayers :",
+                    "table": {
+                        "headers": ["Income Slabs", "Tax Rates"],
+                        "rows": [
+                           [" 0 - 2,50,000	", "No Tax"],
+                           [" 2,50,001 - 5,00,000", "10% tax"],
+                           [" 5,00,001 - 10,00, 000", " 20%tax"],
+                           [" Above 10,00,000", "30%tax"],
+                           
+                       ]
+                          
+                   }
+                },
+                {
+                    "title": "Income Tax Slab for Senior Citizens (Ages between 60 to 80 years) :",
+                    "table": {
+                        "headers": ["Income Slabs", "Tax Rates"],
+                        "rows": [
+                           [" 0 - 3,00,000	", "No Tax"],
+                           [" 3,00,001 - 5,00,000", "10% tax"],
+                           [" 5,00,001 - 10,00, 000", " 20%tax"],
+                           [" Above 10,00,000", "30%tax"],
+                           ]
+                          
+                   }
+                },
+                {
+                    "title": "Income Tax Slab for Super Senior Citizens (Ages Above 80 years) :",
+                    "table": {
+                        "headers": ["Income Slabs", "Tax Rates"],
+                        "rows": [
+                           [" 0 - 5,00,000	", "No Tax"],
+                           [" 5,00,001 - 10,00, 000", " 20%tax"],
+                           [" Above 10,00,000", "30%tax"],
+                           
+                       ]
+                          
+                   }
+                },
+
                 {
                     "title": "2. Capital Gains Tax:",
                     "description": "This is a tax that is payable whenever you receive a sizable amount of money. It could be from an investment or from the sale of a property. It is usually of two types, short term capital gains from investments held for less than 36 months and long term capital gains from investments held for longer than 36 months. The tax applicable for each is also very different since the tax on short term gains is calculated based in the income bracket that you fall in and the tax on long term gains is 20%. The interest thing about this tax is that the gain doesn't always have to be in the form of money. It could also be an exchange in kind in which case the value of the exchange will be considered for taxation."
@@ -121,7 +191,7 @@ const indirect_tax = {
         {
             "title":"Indirect Tax:",
             "description":"By definition, indirect taxes are those taxes that are levied on goods or services. They differ from direct taxes because they are not levied on a person who pays them directly to the government, they are instead levied on products and are collected by an intermediary, the person selling the product. The most common examples of indirect tax Indirect tax can be VAT (Value Added Tax), Taxes on Imported Goods, Sales Tax, etc. These taxes are levied by adding them to the price of the service or product which tends to push the cost of the product up.",
-            "sub-title":"Examples of Indirect Taxes:",
+            "title-1":"Examples of Indirect Taxes:",
             "small-para":"These are some of the common indirect taxes that you pay.",
             "sub-topics": [
                 {
@@ -166,7 +236,7 @@ const indirect_tax = {
         {
             "title": "Other Taxes:",
             "description": "While direct and indirect taxes are the two main types of taxes, there are also these small cess taxes that are also seen in the country. Although, they aren’t major revenue generators and are not considered to be as such, these taxes help the government fund several initiatives that concentrate on the improving the basic infrastructure and maintain general well being of the country. The taxes in this category are primarily referred to as a cess, which are taxes levied by the government and the funds generated through this are used for specific purposes as per the Finance Minister’s discretions.",
-            "sub-title": "Examples of Other taxes:",
+            "title-1": "Examples of Other taxes:",
             "small-para": "Below are some of the examples of other taxes that are seen most commonly in India.",
             "sub-topics": [
                 {

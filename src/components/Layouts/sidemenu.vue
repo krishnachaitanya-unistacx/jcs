@@ -5,11 +5,7 @@
             <h3>About Tax</h3>
             <hr />
             <ul>
-                <li v-for="user in users" :key="user.id">
-                     <RouterLink :to="{ name: 'UserProfile', params: { id: user.id } }">
-                            {{ user.name }}
-                    </RouterLink>
-                 </li>
+
                 
                 <li >
                     <RouterLink to="/sub/1">What is Tax?</RouterLink>
@@ -28,13 +24,13 @@
                     <RouterLink to="/sub/5">Capital Gains Tax(CGT)</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/sub/4">Capital Gain Tax on Shares</RouterLink>
+                    <RouterLink to="/sub/6">Capital Gain Tax on Shares</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/sub/4">Advance Tax</RouterLink>
+                    <RouterLink to="/sub/7">Advance Tax</RouterLink>
                 </li>
                 <li> 
-                    <RouterLink to="/sub/4">Income Tax for FY 2017-18 |Check Slab Rates,Calculation & News</RouterLink>
+                    <RouterLink to="/sub/8">Income Tax for FY 2017-18 |Check Slab Rates,Calculation & News</RouterLink>
                 </li>
             </ul>
             <!-- form -->

@@ -14,7 +14,7 @@
                             incididunt</p>
 
                         <div class=" social-media d-flex gap-4 ">
-                            <li><a href="#"><i class="bi bi-facebook fs-5"></i></a></li>
+                            <li><a href="https://www.facebook.com/JaasrithaCorporateSolutions/"><i class="bi bi-facebook fs-5"></i></a></li>
                             <li><a href="#"><i class="bi bi-linkedin fs-5"></i></a></li>
                             <li><a href="#"><i class="bi bi-instagram fs-5"></i></a></li>
                             <li><a href="#"><i class="bi bi-twitter fs-5"></i></a></li>

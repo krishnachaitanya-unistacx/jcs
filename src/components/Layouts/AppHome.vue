@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <!--sec-1-->
+        <!--sec-1 About us-->
         <section class=" home-sec2 mt-3">
             <div class="container">
                 <div class="row">
@@ -53,7 +53,7 @@
                 </div>
             </div>
         </section>
-        <!--sec-2-->
+        <!--sec-2    Services-section-->
         <section class=" home-sec3 mt-3" style="background:#f0f7fc ">
             <div class="container ">
                 <h2 class="">Our Service</h2>
@@ -187,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <!--sec-3-->
+        <!--sec-3 Call-Back-Action-->
         <section class="home-sec4 mb-3">
             <div class="container text-white">
                 <div class="row">
@@ -362,7 +362,7 @@ a:hover {
 }
 
 .home-sec4 {
-    background-image: url(../../assets/images/call-back.jpg);
+    background-image: url(../../assets/images/call-back-1.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

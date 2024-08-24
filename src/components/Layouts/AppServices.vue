@@ -21,22 +21,7 @@
       <div class="container">
         <div class="row p-2 gap-2" >
           <!-- col1 -->
-         <div class="card shadow-sm col-sm ps-2">
-             <div class="heading">
-                 <h5>Registrations</h5>
-             </div>
-             <hr />
-             <div class="card-body">
-                <ol>
-                    <li>Firm Registrations</li>
-                    <li>Company Registraions</li>
-                    <li>GST Registration</li>
-                    <li>Labour Licence</li>
-                    <li>PF</li>
-                    <li>ESI</li>
-                </ol>
-             </div>
-          </div>
+    
           <div class="card shadow-sm  col-sm  ps-2">
               <div class="heading">
                 <h5>Auditing</h5>

@@ -18,7 +18,7 @@ const data = [
                 "small-para": "Some of these acts are:",
                 "sub-topics": [
                     {
-                        "title": "Income Tax Act:",
+                        "sublist":[ "Income Tax Act:"],
                         "description": "This is also known as the IT Act of 1961 and sets the rules that govern income tax in India. The income, which this act taxes, can come from any source like a business, owning a house or property, gains received from investments and salaries, etc. This is the act that defines how much the tax benefit on a fixed deposit or a life insurance premium will be. It is also the act that decides how much of your income can you save through investments and what the slab for the income tax will be."
                     },
                     {
@@ -54,14 +54,14 @@ const data = [
                 "sub-topics": [
                     {
                         "title": "New Income Tax Slab Rates for FY 2017-18 (AY 2018-19)",
-                        "sub-title": "Income tax slab for individual tax payers & HUF (less than 60 years old) (both men & women)"
+                        "title-1": "Income tax slab for individual tax payers & HUF (less than 60 years old) (both men & women)"
 
                     },
                     {
-                        "sub-title": "Income tax slab for individual tax payers & HUF (60 years old or more but less than 80 years old) (both men & women)"
+                        "title-1": "Income tax slab for individual tax payers & HUF (60 years old or more but less than 80 years old) (both men & women)"
                     },
                     {
-                        "sub-title": "Income tax slab for super senior citizens (80 years old or more) (both men & women)",
+                        "titl-1": "Income tax slab for super senior citizens (80 years old or more) (both men & women)",
                         "description": "Below, you will find a few tables that list out Income Tax Slab Rates for FY 2016-17 (AY 2017-18) These income tax slab rates are also applicable for :FY 2015-16 (AY 2016-17) FY 2014-15 (AY 2015-16) ."
                     },
                     {
@@ -90,6 +90,7 @@ const data = [
             {
                 "title": "5. Corporate Tax:",
                 "description": "Corporate tax is the income tax that is paid by companies from the revenue they earn. This tax also comes with a slab of its own that decides how much tax the company has to pay. For example a domestic company, which has a revenue of less than Rs. 1 crore per annum, won’t have to pay this tax but one that has a revenue of more than Rs. 1 crore per annum will have to pay this tax. It is also referred to as a surcharge and is different for different revenue brackets. It is also different for international companies where the corporate tax may be 41.2% if the company has a revenue of less than Rs. 10 million and so on.",
+                 "small-para":"There are four different types of corporate tax. They are:",
                 "sub-topics": [
                     {
                         "title": "Minimum Alternative Tax:",
@@ -97,8 +98,8 @@ const data = [
                         "description-1": "Once a company pays the MAT, it can carry the payment forward and set-off (adjust) against regular tax payable during the subsequent five-year period subject to certain conditions."
                     },
                     {
-                        "title": "",
-                        "description": "",
+                        "title": "Fringe Benefit Tax:",
+                        "description": "Fringe Benefit Tax, or FBT, was a tax which applied to almost every fringe benefit an employer provided to their employees. In this tax, a number of aspects were covered. Some of them include:",
                         "sublist": [
                             "Employer’s expense on travel (LTA), employee welfare, accommodation, and entertainment.",
                             "Any regular commute or commute related expense provided by an employer.",
