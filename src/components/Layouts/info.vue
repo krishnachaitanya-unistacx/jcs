@@ -273,7 +273,6 @@ h4 {
     background-color: #F1F6F2;
     border-radius: 25px;
 }
-
 .send-form {
     margin: 30px 15px;
     padding: 20px 0px;
