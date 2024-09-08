@@ -34,11 +34,11 @@ const routes = [
         component: ()=> import("../components/Layouts/AppContact.vue"),
 
     },
-    {
-        path: "/",
-        component: ()=> import("../components/Layouts/AppContact.vue"),
+    // {
+    //     path: "/",
+    //     component: ()=> import("../components/Layouts/AppContact.vue"),
 
-    },
+    // },
 
 
 ]

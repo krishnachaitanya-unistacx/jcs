@@ -48,7 +48,7 @@
                 <RouterLink class="nav-link" to="/service">Service</RouterLink>
               </li>
               <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/info" data-bs-toggle="dropdown"
+                <RouterLink class="nav-link dropdown-toggle" role="button" to="/" data-bs-toggle="dropdown"
                   aria-expanded="false">Tax information
                 </RouterLink>
                 <ul class="dropdown-menu">

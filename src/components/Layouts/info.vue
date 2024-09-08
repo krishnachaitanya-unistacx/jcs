@@ -142,6 +142,34 @@
 </div>
 </template>
 
+<!-- <script>
+import sidemenu from './sidemenu.vue';
+import {
+    useRoute
+} from 'vue-router';
+import main_data from './data/main_data';
+
+export default {
+    name: "info.vue",
+
+    data() {
+        return {
+            data: main_data,
+            id: 0,
+        }
+    },
+    mounted() {
+        const route = useRoute();
+        this.id = route.params.id;
+        console.log(this.id,"this is the page")
+    },
+    components: {
+        sidemenu
+    }
+
+}
+</script> -->
+
 <script>
 import sidemenu from './sidemenu.vue';
 import {
@@ -161,13 +189,20 @@ export default {
     mounted() {
         const route = useRoute();
         this.id = route.params.id;
+        console.log(this.id, "this is the page");
+    },
+    watch: {
+        '$route.params.id'(newId) {
+            this.id = newId;
+            // console.log(this.id, "page updated via route watch");
+        }
     },
     components: {
         sidemenu
     }
-
 }
 </script>
+
 
 <style scoped>
 .blue-box {
