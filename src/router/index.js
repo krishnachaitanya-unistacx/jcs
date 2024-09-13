@@ -20,7 +20,7 @@ const routes = [
     },
     {
         path: "/sub",
-        component: ()=> import("../components/Layouts/AppSubservice.vue"),
+        redirect: '/sub/1' // Redirect to /sub/1 when /sub is accessed
        
     },
     {

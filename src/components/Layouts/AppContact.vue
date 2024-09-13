@@ -8,9 +8,9 @@
                     <RouterLink class="routlink" to="/contact">Contact us</RouterLink>
                 </div>
                 <h1 class="my-3 ">Contac Us</h1>
-                <p>with over 10 years of experience helping
+                <!-- <p>with over 10 years of experience helping
                     busineto fi d<br>comprehensive solution
-                </p>
+                </p> -->
             </div>
         </div>
     </div>

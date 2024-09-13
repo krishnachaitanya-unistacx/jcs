@@ -8,7 +8,7 @@
                     <RouterLink  class="routlink" to="/about">About us</RouterLink>
                 </div>
                 <h1 class="my-3 ">About Us</h1>
-                <p>We handle the complexities, so you can focus on <br>achieving your vision.</p>
+                <!-- <p>We handle the complexities, so you can focus on <br>achieving your vision.</p> -->
             </div>
         </div>
     </div>
