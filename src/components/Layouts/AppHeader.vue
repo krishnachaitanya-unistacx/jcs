@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="top w-100 sticky-top" style="background-color: rgb(0, 0, 61); ">
+  
+    <div class="w-100 " style="background-color: rgb(0, 0, 61); ">
       <!-- <button class="btn btn-success ms-3 btn-sm">call now</button>  -->
 
       <div class="ticker-container d-flex align-items-cente">
@@ -17,7 +17,7 @@
             </ul>
           </div>
         </div>
-        <div class="right d-flex p-1 align-items-center justify-content-around " >
+        <div class="right d-flex p-1 align-items-center justify-content-around ">
           <a class="btn  btn-sm btn-success" href="tel:+918374318214">call now</a>
           <div class="news-ticker-header decoration-none d-flex gap-3 flex-inline social-icons">
             <a href="#"><i class="bi bi-facebook fs-5"></i></a>
@@ -27,16 +27,16 @@
         </div>
       </div>
     </div>
-    
-    
+
+
     <!-- Navbar -->
     <!-- second-Navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4   fixed-navba">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 py-4 sticky-top top-0">
       <div class="container-fluid nav-c relative d-flex align-items-center gap-5">
         <img class="navbar-brand" src="../../assets/images/black-logo.svg" alt="" style="height: 42px" />
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar" >
+          aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,72 +45,76 @@
               <RouterLink to="/" class="nav-link " aria-current="page">Home</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink class="nav-link" to="/about">About</RouterLink>
+              <RouterLink class="nav-link" to="/about">About</RouterLink>
             </li>
             <li class="nav-item">
-                <RouterLink class="nav-link" to="/service">Service</RouterLink>
-              </li>
-              <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/" data-bs-toggle="dropdown"
-                  aria-expanded="false">Tax information
-                </RouterLink>
-                <ul class="dropdown-menu">
-                  <li>
-                    <RouterLink class="dropdown-item" to="/Sub" >Subservice</RouterLink>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
-              </li>
+              <RouterLink class="nav-link" to="/service">Service</RouterLink>
+            </li>
+            <li class="nav-item dropdown">
+              <RouterLink class="nav-link dropdown-toggle" role="button" to="/" data-bs-toggle="dropdown"
+                aria-expanded="false">Tax information
+              </RouterLink>
+              <ul class="dropdown-menu">
+                <li>
+                  <RouterLink class="dropdown-item" to="/Sub">Subservice</RouterLink>
+                </li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/contact">Contact</RouterLink>
+            </li>
           </ul>
         </div>
       </div>
-    </nav> 
+    </nav>
 
-   <!-- Off-Canvas Menu -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" data-bs-backdrop="false" :class="!visible ? 'offcanvas-end' : ''">
-    <div class="offcanvas-header">
+    <!-- Off-Canvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
+      data-bs-backdrop="false" :class="!visible ? 'offcanvas-end' : ''">
+      <div class="offcanvas-header">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <hr />
-    <div class="offcanvas-body">
+      </div>
+      <hr />
+      <div class="offcanvas-body">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <RouterLink to="/sub" class="nav-link" @click="visible = !visible" aria-current="page">Home</RouterLink>
-            </li>
-            <li class="nav-item">
-                <RouterLink class="nav-link" to="/about" @click="visible = !visible">About</RouterLink>
-            </li>
-            <li class="nav-item">
-                <RouterLink class="nav-link" to="/service" @click="visible = !visible">Service</RouterLink>
-            </li>
-            <li class="nav-item dropdown">
-                <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown" aria-expanded="false">Tax information</RouterLink>
-                <ul class="dropdown-menu">
-                    <li>
-                        <RouterLink class="dropdown-item" to="/Sub" @click="visible = !visible">Subservice</RouterLink>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <RouterLink class="nav-link" to="/contact" @click="visible = !visible">Contact</RouterLink>
-            </li>
+          <li class="nav-item">
+            <RouterLink to="/sub" class="nav-link" @click="visible = !visible" aria-current="page">Home</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/about" @click="visible = !visible">About</RouterLink>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/service" @click="visible = !visible">Service</RouterLink>
+          </li>
+          <li class="nav-item dropdown">
+            <RouterLink class="nav-link dropdown-toggle" role="button" to="/sub" data-bs-toggle="dropdown"
+              aria-expanded="false">Tax information</RouterLink>
+            <ul class="dropdown-menu">
+              <li>
+                <RouterLink class="dropdown-item" to="/Sub" @click="visible = !visible">Subservice</RouterLink>
+              </li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <RouterLink class="nav-link" to="/contact" @click="visible = !visible">Contact</RouterLink>
+          </li>
         </ul>
+      </div>
     </div>
-</div>
 
-  </div>
+ 
 </template>
 
 <script>
@@ -123,15 +127,13 @@ export default {
       visible: false,
     };
   },
-  
+
 };
 
 </script>
 
 
 <style scoped>
-
-
 .ticker-container {
   font-family: 'Poppins', sans-serif;
 }
